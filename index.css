@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+body{
+    margin: 0;
+}
+
+/* nav bar design starts from here */
+h1{
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.nav-bar{
+    background-color:#131921;
+    text-align: center;
+    padding: 1% 7%;
+}
+
+[class*=col-]{
+    float: left;
+    
+
+}
+ /*for mobile*/
+
+ [class*="col-"]{
+    width: 100%;
+}
+
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;  
+    text-align: center;
+    margin: 7px 0px;
+    background-color: #232F3E;
+    border-radius: 7px;
+     
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.nav-menu a:hover{
+    background-color:cyan;
+    color: black;
+}
+
+
+
+.nav-bar::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+/* nav bar design ends from here */
+
+
+
+/* profile design strats from here */
+
+.profile{
+    text-align: center;
+    background-color: #232F3E;
+}
+
+.profile-desc p{
+    font-size: 1.2rem;
+    color: white;
+   
+}
+
+.profile-img{
+    margin-top: 15px;
+} 
+
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+
+.profile-img img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  
+   
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile design ends here */
+
+
+/* card design starts here */
+
+.three-card{
+    background-color: #232F3E;
+    
+}
+
+.three-card .card{
+    background-color: #131921;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10% 5%;
+    height: 600px;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.three-card .card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+}
+
+
+.card .all-pic{
+    
+    text-align: center;
+}
+.card img{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+    
+
+.three-card::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.skills p{
+    position: relative;
+    margin: ;
+}
+.skills p::before{
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 100%;
+    background-color:white ;
+    top: calc(100% + 5px);
+    border-radius: 100px;
+    
+}
+
+.skills p::after{
+    position: absolute;
+    content: '';
+    height: 10px;
+    width:0px;
+    background-color:blue;
+    top: calc(100% + 5px);
+    border-radius: 100px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    left: 0px;
+
+}
+
+.skills p.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+   
+    to{
+        width: 90%;
+    }
+}
+
+.skills p.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+   
+    to{
+        width: 70%;
+    }
+}
+
+.skills p.java::after{
+    animation-name: java;
+}
+
+@keyframes java{
+   
+    to{
+        width: 10%;
+    }
+}
+
+
+/* card design ends here */
+
+
+
+/* contact starts here */
+
+.contact{
+  background-color: #232F3E;
+ 
+}
+
+.contact .form-container{
+    text-align: center;
+    padding: 15px;
+    
+}
+.contact textarea, input{
+    resize: none;
+    width: 100%;
+   font-size: large;
+   border: none;
+   border-radius: 5px;
+  padding: 10px;
+
+}
+.contact .btn{
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.contact .btn:hover{
+    background-color:#131921;
+    color: white;
+}
+
+
+.contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact-link .icon-container{
+    text-align: center;
+}
+
+.icon-container .icon-buton{
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 1% 2%;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.icon-container .icon-buton:hover{
+   box-shadow: 0px 4px 8px 5px black;
+}
+
+
+/* contact ends here */
+
+
+/* footer */
+.footer-sec{
+    background-color: #131921;
+}
+
+.footer-sec::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.foot-content p{
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    
+}
+
+
+
+/* footer */
+
